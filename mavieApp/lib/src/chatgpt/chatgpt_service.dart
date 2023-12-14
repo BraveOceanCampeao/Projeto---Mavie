@@ -44,7 +44,8 @@ class ChatGPTService {
     return OpenAI.instance.chat.createStream(
       model: "gpt-4",
       messages: context,
-      seed: 423,
+      // seed: 423,
+      temperature: 0.2,
       n: 1,
     );
   }
